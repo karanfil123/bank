@@ -1,0 +1,13 @@
+<div class="login">
+	<h1>Oturum Aç</h1>
+    <form method="post">
+
+    	<input type="text"  [(ngModel)]="loginRequest.username" [ngModelOptions]="{standalone: true}" 
+        placeholder="Username" required="required" />
+
+        <input type="password" [(ngModel)]="loginRequest.password" [ngModelOptions]="{standalone: true}"
+         name="p" placeholder="Password" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large" (click)="login()">Giriş Yap</button>
+    </form>
+</div>
